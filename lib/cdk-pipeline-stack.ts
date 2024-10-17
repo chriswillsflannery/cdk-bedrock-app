@@ -39,6 +39,7 @@ export class CdkPipelineStack extends cdk.Stack {
           authentication: githubAccessToken,
         }),
         commands: ["npm i", "npm run build-all", "npx cdk synth"],
+        // build-all so we don't have to cd into each lambda pkg and build
       }),
     });
 

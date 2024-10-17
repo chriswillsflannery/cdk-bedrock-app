@@ -49,7 +49,7 @@ export class CdkBedrockAppStack extends cdk.Stack {
         environment: {
           STAGE_NAME: props!.stageName,
         },
-        timeout: cdk.Duration.seconds(30),
+        timeout: cdk.Duration.seconds(30), // bedrock is slow
       }
     );
 
